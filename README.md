@@ -1,4 +1,4 @@
-Testing app for [https://github.com/ristep/SimpJ2J](SimpJ2J)
+Testing app for [SimpJ2J](https://github.com/ristep/SimpJ2J)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
