@@ -1,17 +1,18 @@
 import React from 'react';
 import classNames from 'classnames';
 import "../App.css";
+import  Button  from 'react-bootstrap/Button';
 
-function Button(props) {
+function Btn(props) {
   const { classes, children, ...other } = props;
 
   return ( 
     <span>
-      <a className={classNames( classes,'butn') } {...other}>
+      <Button className={classNames( classes,'butn') } {...other}>
         {children}
-      </a>
+      </Button>
     </span>
   );
 }
 
-export default Button;
+export default Btn;
