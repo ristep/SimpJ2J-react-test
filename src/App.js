@@ -21,9 +21,9 @@ const Axios = axios.create(axParams);
 
 function App() {
 	const [result, setResult] = useState({
-		text: "Kliko testing APP",
-		kliko01: 0,
-		kliko02: 0
+		text: "Click testing APP",
+		Click01: 0,
+		Clock02: 0
 	});
 	const [jsonQuery, setJsonQuery] = useState({}); // jsonQuery send to server
 	const [retData, setRetData] = useState({});     // obtained data from server
@@ -95,7 +95,7 @@ function App() {
 		getJsonData({
 			sqlStatement: "insert",
 			table: "foods",
-			data: { id: 980, name: "Jatki za popredok" }
+			data: { id: 980, name: "Seeds for beer" }
 		});
 	};
 
@@ -136,7 +136,7 @@ function App() {
 				<p>
 					Application for testing <Btn href="https://github.com/ristep/SimpJ2J" target="_blank"> SimpJ2J </Btn>
 					<hr />
-					<Btn onClick={() => getToken({ userName: 'mavro', password: 'mavro' })}>Get User Tokoen</Btn>
+					<Btn onClick={() => getToken({ userName: 'mavro', password: 'mavro' })}>Get User Token</Btn>
 					<label>{tokenData.first_name} {tokenData.second_name}</label>
 				</p>
 			</Navbar>
@@ -170,7 +170,7 @@ function App() {
 				theme="light_mitsuketa_tribute"
 				locale={locale}
 				height="auto"
-				withd="1200px"
+				width="auto"
 			/>
 			<div>
 			<Btn onClick={() => onClickClearData()}> Clear Data</Btn>
