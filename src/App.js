@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import logo from "./lynx.svg";
 import "./App.css";
 
-import { ButtonToolbar } from 'react-bootstrap';
+import { ButtonToolbar, Navbar } from 'react-bootstrap';
 import axios from "axios";
 import ReactJson from "react-json-view";
 import Btn from "./buttons";
@@ -131,7 +131,7 @@ function App() {
 	return ( 
 		<div className="App">
 			<label className="sitno-text top-right">React: {React.version} </label>
-  		<header className="App-header">
+  		<Navbar className="App-header">
 				<img src={logo} className="App-logo top-left" alt="logo" />
 				<p>
 					Application for testing <Btn href="https://github.com/ristep/SimpJ2J" target="_blank"> SimpJ2J </Btn>
@@ -139,7 +139,7 @@ function App() {
 					<Btn onClick={() => getToken({ userName: 'mavro', password: 'mavro' })}>Get User Tokoen</Btn>
 					<label>{tokenData.first_name} {tokenData.second_name}</label>
 				</p>
-			</header>
+			</Navbar>
 			<ButtonToolbar>
 			<Btn onClick={() => onClickSelectFoods()}>Select Foods</Btn>
 			<Btn onClick={() => getJsonData({ table: "foods", sqlStatement: "select" })}>

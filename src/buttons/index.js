@@ -1,5 +1,4 @@
 import React from 'react';
-import classNames from 'classnames';
 import "../App.css";
 import  Button  from 'react-bootstrap/Button';
 
@@ -8,7 +7,7 @@ function Btn(props) {
 
   return ( 
     <span>
-      <Button className={classNames( classes,'butn') } {...other}>
+      <Button size="lg" className="butn" {...other}>
         {children}
       </Button>
     </span>
