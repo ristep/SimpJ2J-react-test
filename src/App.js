@@ -11,7 +11,8 @@ import JSONInput from 'react-json-editor-ajrm';
 import locale from 'react-json-editor-ajrm/locale/en';
 
 const axParams = {
-	baseURL: "https://laplap-capi.sman.cloud/",
+	//baseURL: "http://192.168.100.8/SimpJ2J/",
+	baseURL: "http://192.168.100.8/SimpJ2J/",
 	headers: {
 		"Authorization": "dummy-key",
 		"Content-type": "application/json"
@@ -126,7 +127,7 @@ function App() {
 
 	const onChangeJSON = (jr) => {
 		getJsonData(jr.jsObject);
-	}; 
+	}; 	
 
 	return ( 
 		<div className="App">
